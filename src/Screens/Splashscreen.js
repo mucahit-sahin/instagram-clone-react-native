@@ -1,11 +1,11 @@
 import React from 'react';
 import {View, Text, StyleSheet} from 'react-native';
-import SvgLogo from '../Components/icons/Logo';
+import InstaLogo from '../Components/icons/Logo';
 
 const Splashscreen = () => {
   return (
     <View style={styles.logoView}>
-      <SvgLogo />
+      <InstaLogo />
     </View>
   );
 };

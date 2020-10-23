@@ -3,7 +3,7 @@ import Svg, {LinearGradient, Stop, Path} from 'react-native-svg';
 
 function SvgLogo(props) {
   return (
-    <Svg height={100} viewBox="0 0 24 24" width={100} className="" {...props}>
+    <Svg height={75} viewBox="0 0 24 24" width={75} className="" {...props}>
       <LinearGradient
         id="logo_svg__a"
         gradientTransform="matrix(0 -1.982 -1.844 0 -132.522 -51.077)"
