@@ -11,6 +11,7 @@
     "svgr": "svgr ./src/Assets/icons -d ./src/Components/icons --native --svg-props 'className=' --svgo-config .svgorc.json"
   },
   "dependencies": {
+    "@react-navigation/native": "^5.8.0",
     "@svgr/cli": "^5.4.0",
     "react": "16.13.1",
     "react-native": "0.63.3",
