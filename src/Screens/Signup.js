@@ -1,44 +1,36 @@
 import React from 'react';
-import {
-  StyleSheet,
-  TextInput,
-  View,
-  Dimensions,
-  Text,
-  TouchableOpacity,
-} from 'react-native';
-import Instagram from '../Components/icons/Instagram';
+import {Dimensions, StyleSheet, Text, TextInput, View} from 'react-native';
+import {TouchableOpacity} from 'react-native-gesture-handler';
 import Button from '../Components/Button';
+
+import Instagram from '../Components/icons/Instagram';
 
 const width = Dimensions.get('window').width;
 
-const Login = ({navigation}) => {
+const Signup = ({navigation}) => {
   return (
     <View style={styles.container}>
       <View>
         <Instagram />
       </View>
       <View>
+        <TextInput style={styles.text} placeholder="Email" />
+        <TextInput style={styles.text} placeholder="Display Name" />
         <TextInput style={styles.text} placeholder="Username" />
         <TextInput
           style={styles.text}
           placeholder="Password"
           secureTextEntry={true}
         />
-      </View>
-      <View style={styles.forget}>
-        <TouchableOpacity>
-          <Text style={styles.forgetText}>Forget Password</Text>
-        </TouchableOpacity>
+        <View style={styles.signup}>
+          <Button text="Sign up" />
+        </View>
       </View>
       <View style={styles.login}>
-        <Button text="Login" />
-      </View>
-      <View style={styles.sign}>
         <Text>
-          Dou you have an account?
-          <TouchableOpacity onPress={() => navigation.navigate('Signup')}>
-            <Text style={styles.signText}>Sign up.</Text>
+          Have an account?
+          <TouchableOpacity onPress={() => navigation.navigate('Login')}>
+            <Text style={styles.loginText}>Login</Text>
           </TouchableOpacity>
         </Text>
       </View>
@@ -46,7 +38,7 @@ const Login = ({navigation}) => {
   );
 };
 
-export default Login;
+export default Signup;
 
 const styles = StyleSheet.create({
   container: {
@@ -65,22 +57,14 @@ const styles = StyleSheet.create({
     textShadowRadius: 10,
     borderRadius: 10,
   },
-  login: {
+  signup: {
     width: width - 40,
     marginTop: 10,
   },
-  forget: {
-    marginTop: 20,
-    width: width - 40,
-  },
-  forgetText: {
-    color: 'gray',
-    textAlign: 'right',
-  },
-  sign: {
+  login: {
     marginTop: 50,
   },
-  signText: {
+  loginText: {
     color: 'blue',
   },
 });
