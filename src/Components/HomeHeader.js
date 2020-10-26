@@ -26,6 +26,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     height: 50,
+    backgroundColor: '#F2F2F2',
   },
   instagram: {
     height: 30,
