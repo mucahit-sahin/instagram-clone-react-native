@@ -1,5 +1,6 @@
 import React from 'react';
 import {SafeAreaView, StyleSheet, StatusBar} from 'react-native';
+import Home from './Screens/Home';
 
 import SignPanel from './Screens/SignPanel';
 import Splashscreen from './Screens/Splashscreen';
@@ -9,7 +10,8 @@ function App() {
     <>
       <StatusBar barStyle="dark-content" />
       {/* <Splashscreen /> */}
-      <SignPanel />
+      {/* <SignPanel /> */}
+      <Home />
     </>
   );
 }
