@@ -1,4 +1,6 @@
 export { default as Camera } from './Camera'
+export { default as Comment } from './Comment'
+export { default as Heart } from './Heart'
 export { default as Instagram } from './Instagram'
 export { default as Logo } from './Logo'
 export { default as More } from './More'
