@@ -1,5 +1,6 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
+import More from './icons/More';
 
 const Post = () => {
   return (
@@ -8,6 +9,7 @@ const Post = () => {
       <View style={styles.header}>
         <View style={styles.userimage}></View>
         <Text style={styles.username}>kulllanıcı adı</Text>
+        <More stroke="black" style={styles.more} />
       </View>
     </View>
   );
@@ -25,4 +27,5 @@ const styles = StyleSheet.create({
     marginLeft: 5,
   },
   username: {paddingLeft: 20, fontWeight: 'bold'},
+  more: {position: 'absolute', right: 10},
 });
