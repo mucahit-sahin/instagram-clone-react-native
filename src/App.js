@@ -1,5 +1,6 @@
 import React from 'react';
 import {SafeAreaView, StyleSheet, StatusBar} from 'react-native';
+import BottomNavigation from './Screens/BottomNavigation';
 import Home from './Screens/Home';
 
 import SignPanel from './Screens/SignPanel';
@@ -11,7 +12,7 @@ function App() {
       <StatusBar barStyle="dark-content" />
       {/* <Splashscreen /> */}
       {/* <SignPanel /> */}
-      <Home />
+      <BottomNavigation />
     </>
   );
 }
