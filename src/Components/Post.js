@@ -5,7 +5,6 @@ import {PostHeader, PostContent} from './PostComponents';
 const Post = () => {
   return (
     <View>
-      {/* header */}
       <PostHeader />
       <PostContent />
     </View>
