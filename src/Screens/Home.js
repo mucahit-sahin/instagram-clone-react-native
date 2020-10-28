@@ -1,13 +1,19 @@
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {SafeAreaView, StyleSheet, Text, View} from 'react-native';
+import {ScrollView} from 'react-native-gesture-handler';
+
 import HomeHeader from '../Components/HomeHeader';
 import Post from '../Components/Post';
 
 const Home = () => {
   return (
-    <View style={styles.container}>
+    <View as={SafeAreaView} style={styles.container}>
       <HomeHeader />
-      <Post />
+      <ScrollView>
+        <Post />
+        <Post />
+        <Post />
+      </ScrollView>
     </View>
   );
 };
@@ -15,5 +21,5 @@ const Home = () => {
 export default Home;
 
 const styles = StyleSheet.create({
-  container: {},
+  container: {flex: 1},
 });

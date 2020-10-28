@@ -4,7 +4,7 @@ import {PostHeader, PostContent} from './PostComponents';
 
 const Post = () => {
   return (
-    <View>
+    <View style={{marginBottom: 10}}>
       <PostHeader />
       <PostContent />
     </View>
