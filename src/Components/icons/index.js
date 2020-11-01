@@ -1,3 +1,4 @@
+export { default as Accounts } from './Accounts'
 export { default as Add } from './Add'
 export { default as Bookmark } from './Bookmark'
 export { default as Camera } from './Camera'
